@@ -10,10 +10,15 @@ Import-Module -Name Terminal-Icons
 
 # PSReadLine
 Import-Module PSReadLine
+# Use inline prediction view in VSCode to avoid: WARNING: The prediction 'ListView' is temporarily disabled because the current window size of the console is too small. To use the 'ListView', please make sure the 'WindowWidth' is not less than '54' and the 'WindowHeight' is not less than '15'.
+if($env:TERM_PROGRAM -eq "vscode") {
+   Set-PSReadLineOption -PredictionViewStyle InlineView
+}else {
+   Set-PSReadLineOption -PredictionViewStyle ListView
+}
 Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineOption -BellStyle None
 Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
