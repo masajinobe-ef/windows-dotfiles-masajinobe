@@ -3,7 +3,7 @@
 
 Invoke-Expression (&scoop-search --hook)
 
-oh-my-posh --init --shell pwsh --config 'C:\Users\masa\Documents\PowerShell\1_shell.omp.json' | Invoke-Expression
+oh-my-posh --init --shell pwsh --config 'C:\Users\masa\Documents\PowerShell\owl.json' | Invoke-Expression
 Import-Module posh-git
 
 Import-Module -Name Terminal-Icons
