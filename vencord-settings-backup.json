@@ -11,7 +11,7 @@
         "winCtrlQ": false,
         "macosTranslucency": false,
         "disableMinSize": true,
-        "winNativeTitleBar": true,
+        "winNativeTitleBar": false,
         "plugins": {
             "BadgeAPI": {
                 "enabled": true
@@ -639,6 +639,15 @@
             },
             "FixImagesQuality": {
                 "enabled": true
+            },
+            "Decor": {
+                "enabled": false
+            },
+            "NotificationVolume": {
+                "enabled": false
+            },
+            "XSOverlay": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -651,7 +660,7 @@
             "authenticated": true,
             "url": "https://api.vencord.dev/",
             "settingsSync": true,
-            "settingsSyncVersion": 1701975646824
+            "settingsSyncVersion": 1701975917181
         },
         "enabledThemes": [
             "midnight.theme.css"
