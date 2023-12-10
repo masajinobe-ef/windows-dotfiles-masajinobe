@@ -4,14 +4,16 @@
         "autoUpdate": false,
         "autoUpdateNotification": true,
         "useQuickCss": true,
-        "themeLinks": [],
+        "themeLinks": [
+            "https://raw.githubusercontent.com/refact0r/midnight-discord/master/midnight.css"
+        ],
         "enableReactDevtools": false,
         "frameless": false,
         "transparent": false,
         "winCtrlQ": false,
         "macosTranslucency": false,
         "disableMinSize": true,
-        "winNativeTitleBar": false,
+        "winNativeTitleBar": true,
         "plugins": {
             "BadgeAPI": {
                 "enabled": true
@@ -486,7 +488,7 @@
                 "enabled": true
             },
             "Dearrow": {
-                "enabled": true
+                "enabled": false
             },
             "FavoriteGifSearch": {
                 "enabled": true,
@@ -660,7 +662,7 @@
             "authenticated": true,
             "url": "https://api.vencord.dev/",
             "settingsSync": true,
-            "settingsSyncVersion": 1701975917181
+            "settingsSyncVersion": 1701976087300
         },
         "enabledThemes": [
             "midnight.theme.css"

@@ -29,7 +29,7 @@
             "keys": "ctrl+shift+f"
         }
     ],
-    "alwaysOnTop": true,
+    "alwaysOnTop": false,
     "alwaysShowNotificationIcon": true,
     "autoHideWindow": false,
     "centerOnLaunch": true,
@@ -57,12 +57,13 @@
             "font": 
             {
                 "cellHeight": "1.2",
-                "face": "Hack Nerd Font",
+                "face": "Hack Nerd Font Mono",
+                "size": 14.0,
                 "weight": "normal"
             },
-            "opacity": 50,
+            "opacity": 90,
             "padding": "4",
-            "useAcrylic": true
+            "useAcrylic": false
         },
         "list": 
         [
@@ -102,6 +103,24 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+                "hidden": false,
+                "name": "Arch",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             }
         ]
     },
@@ -338,6 +357,29 @@
             "yellow": "#E0AF68"
         },
         {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -368,6 +410,6 @@
     "tabWidthMode": "titleLength",
     "theme": "dark",
     "themes": [],
-    "useAcrylicInTabRow": true,
+    "useAcrylicInTabRow": false,
     "windowingBehavior": "useNew"
 }
