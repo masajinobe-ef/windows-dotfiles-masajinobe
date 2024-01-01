@@ -38,9 +38,12 @@ Set-Alias scoof scoop
 Set-Alias g git
 Set-Alias l ls
 Set-Alias grep findstr
+Set-Alias lg lazygit 
 
 # Utilities
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
+
+cls
