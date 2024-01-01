@@ -1,0 +1,65 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 0,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.mouseWheelZoom": true,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.defaultProfile.windows": "PowerShell_7",
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell_7": {
+      "path": "C:\\Users\\masa\\scoop\\apps\\pwsh\\current\\pwsh.exe",
+      "icon": "terminal-powershell"
+    }
+  },
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.startupPrompt": "never",
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "redhat.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "extensions.ignoreRecommendations": true,
+  "vscodeGoogleTranslate.preferredLanguage": "Russian",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "errorLens.enabled": true,
+  "errorLens.messageEnabled": true,
+  "window.zoomLevel": 1,
+  "markdownlint.config": {
+    "MD033": {
+      "allowed_elements": [
+        "nobr",
+        "sup",
+        "a",
+        "p",
+        "img"
+      ]
+    }
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "errorLens.enabledDiagnosticLevels": [
+    "hint",
+    "info",
+    "warning",
+    "error"
+  ],
+}
