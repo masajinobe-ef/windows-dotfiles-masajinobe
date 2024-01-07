@@ -5,7 +5,7 @@
 Invoke-Expression (&scoop-search --hook)
 
 # oh-my-posh & posh-git
-oh-my-posh --init --shell pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/amro.omp.json' | Invoke-Expression
+oh-my-posh --init --shell pwsh --config 'C:\Users\masa\Documents\PowerShell\bubbles.omp.json' | Invoke-Expression
 Import-Module posh-git
 
 # Icons
@@ -30,6 +30,10 @@ function syu {
     scoop update
     scoop status
     scoop update *
+}
+
+function live {
+    live-server --port=5500 --no-browser
 }
 
 # PSReadLine
