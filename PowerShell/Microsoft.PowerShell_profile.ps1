@@ -75,3 +75,5 @@ function syu {
 function live {
     live-server --port=5500
 }
+
+clear
