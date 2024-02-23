@@ -52,25 +52,6 @@ if($env:TERM_PROGRAM -eq "vscode") {
     Set-PSReadLineOption -PredictionViewStyle InlineView
  }
 
-# scoop update
-function sy {
-    s update
-    s status
-}
-
-# scoop update *
-function su {
-    s update *
-    s status
-}
-
-# scoop sync packages and update
-function syu {
-    s update
-    s status
-    s update *
-}
-
 # live-server
 function live {
     live-server --port=5500
