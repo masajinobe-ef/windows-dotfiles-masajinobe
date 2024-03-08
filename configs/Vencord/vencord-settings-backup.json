@@ -7,6 +7,9 @@
         "themeLinks": [
             "https://raw.githubusercontent.com/refact0r/midnight-discord/master/midnight.css"
         ],
+        "enabledThemes": [
+            "midnight.theme.css"
+        ],
         "enableReactDevtools": false,
         "frameless": false,
         "transparent": false,
@@ -126,9 +129,6 @@
                 "type": 0,
                 "timestampMode": 0
             },
-            "DisableDMCallIdle": {
-                "enabled": false
-            },
             "EmoteCloner": {
                 "enabled": true
             },
@@ -206,7 +206,9 @@
                 "replaceEvents": true
             },
             "MemberCount": {
-                "enabled": true
+                "enabled": true,
+                "memberList": true,
+                "toolTip": true
             },
             "MessageClickActions": {
                 "enabled": true,
@@ -282,12 +284,6 @@
                 "triggerWhenUnfocused": true,
                 "ignoreBots": true,
                 "ignoreBlocked": true
-            },
-            "MuteNewGuild": {
-                "enabled": false,
-                "guild": true,
-                "everyone": true,
-                "role": true
             },
             "MutualGroupDMs": {
                 "enabled": true
@@ -661,6 +657,24 @@
             },
             "FixYoutubeEmbeds": {
                 "enabled": false
+            },
+            "ChatInputButtonAPI": {
+                "enabled": true
+            },
+            "DisableCallIdle": {
+                "enabled": false
+            },
+            "NewGuildSettings": {
+                "enabled": false,
+                "guild": true,
+                "everyone": true,
+                "role": true
+            },
+            "BetterRoleContext": {
+                "enabled": false
+            },
+            "ResurrectHome": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -673,11 +687,8 @@
             "authenticated": true,
             "url": "https://api.vencord.dev/",
             "settingsSync": true,
-            "settingsSyncVersion": 1706673622021
-        },
-        "enabledThemes": [
-            "midnight.theme.css"
-        ]
+            "settingsSyncVersion": 1709930153349
+        }
     },
     "quickCss": ""
 }

@@ -32,7 +32,6 @@
   "git.autofetch": true,
   "errorLens.enabled": true,
   "errorLens.messageEnabled": true,
-  "window.zoomLevel": 1,
   "markdownlint.config": {
     "MD033": {
       "allowed_elements": [
@@ -62,4 +61,10 @@
     "warning",
     "error"
   ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
 }

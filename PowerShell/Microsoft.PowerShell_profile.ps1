@@ -52,9 +52,4 @@ if($env:TERM_PROGRAM -eq "vscode") {
     Set-PSReadLineOption -PredictionViewStyle InlineView
  }
 
-# live-server
-function live {
-    live-server --port=5500
-}
-
 clear

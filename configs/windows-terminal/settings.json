@@ -1,9 +1,11 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -14,16 +16,17 @@
             "keys": "ctrl+v"
         },
         {
-            "command": {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         }
     ],
     "alwaysOnTop": false,
@@ -37,22 +40,26 @@
     "focusFollowMouse": false,
     "launchMode": "default",
     "minimizeToNotificationArea": false,
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
     "newTabPosition": "afterLastTab",
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "colorScheme": "Tokyo Night",
             "cursorHeight": 25,
             "cursorShape": "vintage",
             "experimental.retroTerminalEffect": false,
-            "font": {
+            "font": 
+            {
                 "cellHeight": "1.2",
                 "face": "JetBrainsMono Nerd Font",
-                "size": 14.0,
+                "size": 13.0,
                 "weight": "normal"
             },
             "opacity": 90,
@@ -60,7 +67,8 @@
             "useAcrylic": false,
             "useAtlasEngine": false
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -87,26 +95,21 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{9d1e09d7-6659-519d-8c3f-e2fd76bfdf9e}",
+                "guid": "{4dc0b80d-16f3-5721-ad5a-6a7a52183ca0}",
                 "hidden": false,
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{d4c43067-b086-5664-a8c1-78b2598ba3a3}",
+                "guid": "{6d5ab61c-09e0-562b-adc1-52d1d0bf7fc1}",
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
-                "hidden": false,
-                "name": "Arch",
-                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
