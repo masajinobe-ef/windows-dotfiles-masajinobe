@@ -30,7 +30,7 @@
         }
     ],
     "alwaysOnTop": false,
-    "alwaysShowNotificationIcon": true,
+    "alwaysShowNotificationIcon": false,
     "autoHideWindow": false,
     "centerOnLaunch": true,
     "copyFormatting": "none",
