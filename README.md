@@ -1,12 +1,6 @@
 # Terminal Dotfiles
 
-This repository contains my personal configuration files (dotfiles) for PowerShell and Windows Terminal.
-
-## Installation
-
-To use these dotfiles on your system, follow these steps:
-
-Clone this repository to your local machine:
+This repository contains my dotfiles for pwsh7 and terminal.
 
 ```bash
 git clone https://github.com/masajinobe-ef/terminal-dotfiles
