@@ -6,7 +6,7 @@ Invoke-Expression (&scoop-search --hook)
 
 # oh-my-posh & posh-git
 $profileDirectory = (Get-Item $PROFILE).Directory.FullName
-$relativeConfigPath = Join-Path $profileDirectory "jandedobbeleer.omp.json"
+$relativeConfigPath = Join-Path $profileDirectory "kushal.omp.json"
 oh-my-posh --init --shell pwsh --config $relativeConfigPath | Invoke-Expression
 Import-Module posh-git
 
