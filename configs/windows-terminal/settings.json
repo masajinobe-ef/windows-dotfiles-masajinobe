@@ -31,13 +31,14 @@
     ],
     "alwaysOnTop": false,
     "alwaysShowNotificationIcon": false,
+    "alwaysShowTabs": true,
     "autoHideWindow": false,
     "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "disableAnimations": false,
-    "focusFollowMouse": false,
+    "disableAnimations": true,
+    "focusFollowMouse": true,
     "launchMode": "default",
     "minimizeToNotificationArea": false,
     "newTabMenu": 
@@ -51,19 +52,22 @@
     {
         "defaults": 
         {
-            "colorScheme": "Tokyo Night",
+            "adjustIndistinguishableColors": "indexed",
+            "colorScheme": "Tokyo Night Storm",
             "cursorHeight": 25,
-            "cursorShape": "vintage",
+            "cursorShape": "bar",
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "cellHeight": "1.2",
+                "cellHeight": "1",
                 "face": "JetBrainsMono Nerd Font",
-                "size": 13.0,
+                "size": 14.0,
                 "weight": "normal"
             },
+            "intenseTextStyle": "all",
             "opacity": 90,
-            "padding": "4",
+            "padding": "5",
+            "scrollbarState": "hidden",
             "useAcrylic": false,
             "useAtlasEngine": false
         },
@@ -388,10 +392,11 @@
         }
     ],
     "showTabsInTitlebar": true,
-    "showTerminalTitleInTitlebar": true,
+    "showTerminalTitleInTitlebar": false,
     "snapToGridOnResize": true,
     "tabSwitcherMode": "inOrder",
-    "tabWidthMode": "titleLength",
+    "tabWidthMode": "equal",
+    "theme": "dark",
     "themes": [],
     "useAcrylicInTabRow": false,
     "windowingBehavior": "useExisting"

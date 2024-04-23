@@ -16,9 +16,7 @@
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.enabled": false,
   "security.workspace.trust.startupPrompt": "never",
-  "workbench.colorTheme": "Tokyo Night",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
   "liveServer.settings.donotShowInfoMsg": true,
@@ -30,8 +28,25 @@
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
   "errorLens.enabled": true,
   "errorLens.messageEnabled": true,
+  "editor.lineHeight": 0,
+  "editor.fontSize": 16,
+  "editor.fontLigatures": false,
+  "fontshortcuts.defaultFontSize": 14,
+  "fontshortcuts.defaultTerminalFontSize": 14,
+  "fontshortcuts.step": 1,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "errorLens.enabledDiagnosticLevels": [
+    "hint",
+    "info",
+    "warning",
+    "error"
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
   "markdownlint.config": {
     "MD033": {
       "allowed_elements": [
@@ -43,31 +58,13 @@
       ]
     }
   },
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "errorLens.enabledDiagnosticLevels": [
-    "hint",
-    "info",
-    "warning",
-    "error"
-  ],
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8"
-  },
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-  }
+  "workbench.startupEditor": "none",
+  "black-formatter.args": 
+    [
+      "--line-length",
+      "79"
+    ],
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "Blinds (Default Dark)",
+    "window.customTitleBarVisibility": "auto"
 }

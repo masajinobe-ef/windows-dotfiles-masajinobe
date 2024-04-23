@@ -1,7 +1,0 @@
-[credential]
-	helper = manager
-[core]
-	autocrlf = true
-[user]
-	email = priscilla.effects@gmail.com
-	name = masajinobe-ef
