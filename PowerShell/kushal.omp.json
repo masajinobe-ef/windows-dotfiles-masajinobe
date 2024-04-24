@@ -39,49 +39,6 @@
           "type": "shell"
         },
         {
-          "background": "#EF541C",
-          "foreground": "#D6DEEB",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " \uf09c admin ",
-          "type": "root"
-        },
-        {
-          "type": "cmake",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "#E8EAEE",
-          "background": "#1E9748",
-          "template": " \ue61e \ue61d cmake {{ .Full }} "
-        },
-        {
-          "type": "python",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "display_mode": "context"
-          },
-          "foreground": "#011627",
-          "background": "#FFDE57",
-          "template": " \ue73c {{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }} "
-        },
-        {
-          "type": "go",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "#ffffff",
-          "background": "#7FD5EA",
-          "template": " \u202d\ue626 {{ .Full }} "
-        },
-        {
-          "type": "rust",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "#193549",
-          "background": "#99908A",
-          "template": " \ue7a8 {{ .Full }} "
-        },
-        {
           "background": "#1BD4CD",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#16B1AC{{ end }}",
@@ -149,15 +106,6 @@
           "style": "plain",
           "template": "\u256d\u2500",
           "type": "text"
-        },
-        {
-          "foreground": "#F2D3B6",
-          "properties": {
-            "time_format": "<#D6DEEB>\ue641 15:04:05</> <#79DFE1>|</> \uf073 2 Jan, Monday"
-          },
-          "style": "plain",
-          "template": "{{ .CurrentDate | date .Format }} <#79DFE1>|</>",
-          "type": "time"
         },
         {
           "foreground": "#B6D6F2",
