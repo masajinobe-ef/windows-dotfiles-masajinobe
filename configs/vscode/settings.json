@@ -32,39 +32,34 @@
   "errorLens.enabled": true,
   "errorLens.messageEnabled": true,
   "editor.lineHeight": 0,
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.fontLigatures": false,
   "fontshortcuts.defaultFontSize": 14,
   "fontshortcuts.defaultTerminalFontSize": 14,
   "fontshortcuts.step": 1,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "errorLens.enabledDiagnosticLevels": [
-    "hint",
-    "info",
-    "warning",
-    "error"
-  ],
+  "errorLens.enabledDiagnosticLevels": ["hint", "info", "warning", "error"],
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "markdownlint.config": {
     "MD033": {
-      "allowed_elements": [
-        "nobr",
-        "sup",
-        "a",
-        "p",
-        "img"
-      ]
+      "allowed_elements": ["nobr", "sup", "a", "p", "img"]
     }
   },
   "workbench.startupEditor": "none",
-  "black-formatter.args": 
-    [
-      "--line-length",
-      "79"
-    ],
-    "workbench.activityBar.location": "top",
-    "workbench.colorTheme": "Blinds (Default Dark)",
-    "window.customTitleBarVisibility": "auto"
+  "black-formatter.args": ["--line-length", "79"],
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Blinds (Default Dark)",
+  "window.customTitleBarVisibility": "auto",
+  "window.commandCenter": false,
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "PrateekMahendrakar.prettyxml"
+  }
 }

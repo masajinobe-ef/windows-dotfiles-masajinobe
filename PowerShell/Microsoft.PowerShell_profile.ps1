@@ -10,9 +10,6 @@ $relativeConfigPath = Join-Path $profileDirectory "space.omp.json"
 oh-my-posh --init --shell pwsh --config $relativeConfigPath | Invoke-Expression
 Import-Module posh-git
 
-# Icons
-Import-Module -Name Terminal-Icons
-
 # Completion
 Import-Module -Name CompletionPredictor
 
@@ -37,17 +34,25 @@ Set-PsFzfOption -PSReadlineChordReverseHistory 'Ctrl+t'
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f'
 
 # Alias
-Set-Alias c code
-Set-Alias n notepad
-Set-Alias s scoop
-Set-Alias g git
-Set-Alias l ls
-Set-Alias grep findstr
-Set-Alias lg lazygit
+Set-Alias -Name c -Value code
+Set-Alias -Name n -Value notepad
+Set-Alias -Name s -Value scoop
+Set-Alias -Name g -Value git
+Set-Alias -Name l -Value ls
+Set-Alias -Name grep -Value findstr
+Set-Alias -Name lg -Value lazygit
 
-# Use inline prediction view in VSCode to avoid: 
-# WARNING: The prediction 'ListView' is temporarily disabled because the current window size of the console is too small. 
-# To use the 'ListView', please make sure the 'WindowWidth' is not less than '54' and the 'WindowHeight' is not less than '15'.
+# Functions
+Set-Alias -Name ls -Value ezafunc
+function ezafunc { 
+    eza --long --header --tree --icons=always --hyperlink --all --level=1 --group-directories-first --time-style '+%d-%m-%Y %H:%M' --no-permissions
+ }
+
+# FZF
+Set-Alias -Name fzf -Value fzffunc
+function fzffunc { fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}' }
+
+# VSCODE
 if($env:TERM_PROGRAM -eq "vscode") {
     Set-PSReadLineOption -PredictionViewStyle InlineView
  }
