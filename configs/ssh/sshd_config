@@ -1,0 +1,24 @@
+# Host
+ListenAddress  0.0.0.0
+ListenAddress  ::
+Port           33677
+
+# Keys
+HostKey             __PROGRAMDATA__/ssh/ssh_host_ed25519_key
+AuthorizedKeysFile  .ssh/authorized_keys
+
+# Auth by
+PubkeyAuthentication             yes
+PasswordAuthentication           no
+ChallengeResponseAuthentication  no
+
+# Settings
+LoginGraceTime   2m
+PermitRootLogin  no
+MaxAuthTries     6
+MaxSessions      3
+Subsystem	 sftp  sftp-server.exe
+
+# Logging
+SyslogFacility  AUTH
+LogLevel        INFO
