@@ -12,8 +12,7 @@ if($env:TERM_PROGRAM -eq "vscode") {
 ### Modules ###
 Import-Module -Name CompletionPredictor # completion
 Import-Module posh-git # posh-git
-Invoke-Expression (&scoop-search --hook) # scoop-search
-Invoke-Expression (& { (zoxide init powershell | Out-String) }) # Z jumper (zoxide)
+Invoke-Expression (&scoop-search --hook)
 
 # oh-my-posh 
 $profileDirectory = (Get-Item $PROFILE).Directory.FullName
@@ -47,7 +46,19 @@ Set-Alias -Name lg  -Value lazygit
 
 Set-Alias -Name ls  -Value ezafunc
 function ezafunc {
-    eza --long --header --tree --icons=always --hyperlink --all --level=1 --group-directories-first --time-style '+%d-%m-%Y %H:%M' --no-permissions
+    eza --long --header --tree --icons=always --all --level=1 --group-directories-first --time-style '+%d-%m-%Y %H:%M' --no-permissions
 }
 
-clear
+
+function yy {
+    $tmp = [System.IO.Path]::GetTempFileName()
+    yazi $args --cwd-file="$tmp"
+    $cwd = Get-Content -Path $tmp
+    if (-not [String]::IsNullOrEmpty($cwd) -and $cwd -ne $PWD.Path) {
+        Set-Location -LiteralPath $cwd
+    }
+    Remove-Item -Path $tmp
+}
+
+
+Invoke-Expression (& { (zoxide init powershell | Out-String) }) # Z jumper (zoxide)

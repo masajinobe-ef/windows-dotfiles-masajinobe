@@ -52,7 +52,8 @@
                 "enabled": false
             },
             "NoTrack": {
-                "enabled": true
+                "enabled": true,
+                "disableAnalytics": true
             },
             "Settings": {
                 "enabled": true,
@@ -62,7 +63,9 @@
                 "enabled": false
             },
             "AlwaysTrust": {
-                "enabled": true
+                "enabled": true,
+                "domain": true,
+                "file": true
             },
             "AnonymiseFileNames": {
                 "enabled": false,
@@ -230,7 +233,9 @@
                 "ignoreSelf": true,
                 "ignoreUsers": "",
                 "ignoreChannels": "",
-                "ignoreGuilds": ""
+                "ignoreGuilds": "",
+                "logEdits": true,
+                "logDeletes": true
             },
             "MessageTags": {
                 "enabled": true,
@@ -337,10 +342,6 @@
                 "steam": true,
                 "epic": true
             },
-            "Party mode 🎉": {
-                "enabled": false,
-                "superIntensePartyMode": 0
-            },
             "PermissionsViewer": {
                 "enabled": true,
                 "permissionsSortOrder": 0,
@@ -406,7 +407,8 @@
                 "enabled": true,
                 "chatMentions": true,
                 "memberList": true,
-                "voiceUsers": true
+                "voiceUsers": true,
+                "reactorsList": true
             },
             "SearchReply": {
                 "enabled": true
@@ -529,12 +531,6 @@
             "SecretRingToneEnabler": {
                 "enabled": false
             },
-            "ServerProfile": {
-                "enabled": true
-            },
-            "ShowTimeouts": {
-                "enabled": true
-            },
             "SuperReactionTweaks": {
                 "enabled": false,
                 "superReactByDefault": true,
@@ -556,13 +552,15 @@
                 "receivedInput": "auto",
                 "receivedOutput": "en",
                 "sentInput": "auto",
-                "sentOutput": "en"
+                "sentOutput": "en",
+                "showChatBarButton": true
             },
             "TypingIndicator": {
                 "enabled": true,
                 "includeMutedChannels": false,
                 "includeBlockedUsers": false,
-                "includeCurrentChannel": true
+                "includeCurrentChannel": true,
+                "indicatorMode": 3
             },
             "TypingTweaks": {
                 "enabled": true,
@@ -675,6 +673,111 @@
             },
             "ResurrectHome": {
                 "enabled": false
+            },
+            "BetterSettings": {
+                "enabled": false
+            },
+            "FriendsSince": {
+                "enabled": false
+            },
+            "OverrideForumDefaults": {
+                "enabled": false
+            },
+            "UnlockedAvatarZoom": {
+                "enabled": false
+            },
+            "PartyMode": {
+                "enabled": false,
+                "superIntensePartyMode": 0
+            },
+            "ShowHiddenThings": {
+                "enabled": true,
+                "showTimeouts": true,
+                "showInvitesPaused": true,
+                "showModView": true,
+                "disableDiscoveryFilters": true,
+                "disableDisallowedDiscoveryFilters": true
+            },
+            "ServerInfo": {
+                "enabled": true
+            },
+            "MessageUpdaterAPI": {
+                "enabled": true
+            },
+            "AppleMusicRichPresence": {
+                "enabled": false
+            },
+            "AutomodContext": {
+                "enabled": false
+            },
+            "BetterSessions": {
+                "enabled": false
+            },
+            "CopyEmojiMarkdown": {
+                "enabled": false
+            },
+            "CtrlEnterSend": {
+                "enabled": false
+            },
+            "CustomIdle": {
+                "enabled": false
+            },
+            "DontRoundMyTimestamps": {
+                "enabled": false
+            },
+            "ImageLink": {
+                "enabled": false
+            },
+            "ImplicitRelationships": {
+                "enabled": false
+            },
+            "MaskedLinkPaste": {
+                "enabled": false
+            },
+            "MessageLatency": {
+                "enabled": false
+            },
+            "NoDefaultHangStatus": {
+                "enabled": false
+            },
+            "NoOnboardingDelay": {
+                "enabled": false
+            },
+            "NoServerEmojis": {
+                "enabled": false
+            },
+            "PauseInvitesForever": {
+                "enabled": false
+            },
+            "ReplaceGoogleSearch": {
+                "enabled": false
+            },
+            "ReplyTimestamp": {
+                "enabled": false
+            },
+            "Summaries": {
+                "enabled": false
+            },
+            "ShowTimeoutDuration": {
+                "enabled": false
+            },
+            "StreamerModeOnStream": {
+                "enabled": false
+            },
+            "ValidReply": {
+                "enabled": false
+            },
+            "VoiceDownload": {
+                "enabled": false
+            },
+            "WatchTogetherAdblock": {
+                "enabled": false
+            },
+            "UserSettingsAPI": {
+                "enabled": true
+            },
+            "ShowAllRoles": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -687,7 +790,7 @@
             "authenticated": true,
             "url": "https://api.vencord.dev/",
             "settingsSync": true,
-            "settingsSyncVersion": 1709930153349
+            "settingsSyncVersion": 1719833455334
         }
     },
     "quickCss": ""

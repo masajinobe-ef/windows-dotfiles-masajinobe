@@ -1,90 +1,18 @@
+// Configure PSScriptAnalyzer settings
 {
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 0,
-
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.mouseWheelZoom": true,
-  "editor.minimap.enabled": false,
-  "editor.lineHeight": 0,
-  "editor.fontSize": 15,
-  "editor.fontLigatures": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.defaultProfile.windows": "PowerShell_7",
-  "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.profiles.windows": {
-    "PowerShell_7": {
-      "path": "C:\\Users\\masa\\scoop\\apps\\pwsh\\current\\pwsh.exe",
-      "icon": "terminal-powershell"
+    "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
+    "powershell.codeFormatting.preset": "OTBS",
+    "powershell.codeFormatting.alignPropertyValuePairs": true,
+    "powershell.codeFormatting.ignoreOneLineBlock": true,
+    "powershell.codeFormatting.useConstantStrings": true,
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.codeFormatting.whitespaceBetweenParameters": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/tmp": true
     }
-  },
-
-  "security.workspace.trust.banner": "never",
-  "security.workspace.trust.enabled": false,
-  "security.workspace.trust.startupPrompt": "never",
-
-  "redhat.telemetry.enabled": false,
-  "telemetry.telemetryLevel": "off",
-
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-
-  "extensions.ignoreRecommendations": true,
-  
-  "vscodeGoogleTranslate.preferredLanguage": "Russian",
-
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  "git.openRepositoryInParentFolders": "never",
-
-  "errorLens.enabled": true,
-  "errorLens.messageEnabled": true,
-  "errorLens.enabledDiagnosticLevels": ["hint", "info", "warning", "error"],
-
-  "fontshortcuts.defaultFontSize": 14,
-  "fontshortcuts.defaultTerminalFontSize": 14,
-  "fontshortcuts.step": 1,
-
-  "workbench.startupEditor": "none",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Blinds (Default Dark)",
-
-  "window.customTitleBarVisibility": "auto",
-  "window.commandCenter": false,
-
-  "black-formatter.args": ["--line-length", "79"],
-
-  "markdownlint.config": {
-    "MD033": {
-      "allowed_elements": ["nobr", "sup", "a", "p", "img"]
-    }
-  },
-
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
-  },
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "[xml]": {
-    "editor.defaultFormatter": "PrateekMahendrakar.prettyxml"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  }
 }
