@@ -15,7 +15,7 @@
       <S N="Copyright">Copyright (c) Microsoft Corporation.</S>
       <DT N="PublishedDate">2023-05-03T21:38:39+05:00</DT>
       <Obj N="InstalledDate" RefId="1">
-        <DT>2024-01-10T07:24:01.949901+05:00</DT>
+        <DT>2024-07-21T23:10:38.5607707+05:00</DT>
         <MS>
           <Obj N="DisplayHint" RefId="2">
             <TN RefId="1">
@@ -51,14 +51,14 @@
         </TN>
         <DCT>
           <En>
-            <S N="Key">DscResource</S>
+            <S N="Key">Cmdlet</S>
             <Obj N="Value" RefId="5">
               <TNRef RefId="2" />
               <LST />
             </Obj>
           </En>
           <En>
-            <S N="Key">RoleCapability</S>
+            <S N="Key">Function</S>
             <Ref N="Value" RefId="5" />
           </En>
           <En>
@@ -66,15 +66,15 @@
             <Ref N="Value" RefId="5" />
           </En>
           <En>
-            <S N="Key">Cmdlet</S>
-            <Ref N="Value" RefId="5" />
-          </En>
-          <En>
             <S N="Key">Workflow</S>
             <Ref N="Value" RefId="5" />
           </En>
           <En>
-            <S N="Key">Function</S>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
             <Ref N="Value" RefId="5" />
           </En>
         </DCT>
@@ -99,15 +99,15 @@
           <S N="requireLicenseAcceptance">False</S>
           <S N="isLatestVersion">True</S>
           <S N="isAbsoluteLatestVersion">True</S>
-          <S N="versionDownloadCount">19739</S>
-          <S N="downloadCount">22443</S>
+          <S N="versionDownloadCount">57273</S>
+          <S N="downloadCount">59989</S>
           <S N="packageSize">39852</S>
           <S N="published">03.05.2023 21:38:39 +05:00</S>
           <S N="created">03.05.2023 21:38:39 +05:00</S>
-          <S N="lastUpdated">10.01.2024 2:20:23 +05:00</S>
+          <S N="lastUpdated">11.07.2024 18:55:03 +05:00</S>
           <S N="tags">PSEdition_Core PSModule</S>
           <S N="developmentDependency">False</S>
-          <S N="updated">2024-01-10T02:20:23Z</S>
+          <S N="updated">2024-07-11T18:55:03Z</S>
           <S N="NormalizedVersion">0.1.1</S>
           <S N="Authors">PowerShell</S>
           <S N="IsPrerelease">false</S>
