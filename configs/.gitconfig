@@ -1,0 +1,9 @@
+[credential]
+	helper = manager
+[core]
+	autocrlf = false
+[user]
+	email = priscilla.effects@gmail.com
+	name = masajinobe-ef
+[init]
+	defaultBranch = main
